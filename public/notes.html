@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notes</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <div class="user-info">
+    <!-- <span>Username</span> -->
+    <i class='bx bxs-user-check'></i>
+  </div>
+  <h1>Створіть нотатку</h1>
+  <form id="notesForm">
+    <textarea id="content" placeholder="Напишіть текст нотатки" required></textarea>
+    <button type="submit">Створити</button>
+  </form>
+  <input type="text" id="searchInput" placeholder="Пошук нотаток">
+  <select id="sortSelect">
+    <option value="asc">Сортувати за зростанням дати</option>
+    <option value="desc">Сортувати за спаданням дати</option>
+  </select>
+  <ul id="notesList"></ul>
+  <div id="message-container"></div>
+  <a href="/logout">Вийти</a>
+  <script src="scripts.js"></script>
+</body>
+</html>
