@@ -14,7 +14,7 @@
   </div>
   <h1>Створіть нотатку</h1>
   <form id="notesForm">
-    <textarea id="content" placeholder="Напишіть текст нотатки" required></textarea>
+    <textarea id="content" placeholder="Напишіть текст нотатки" required></textarea><br>
     <button type="submit">Створити</button>
   </form>
   <input type="text" id="searchInput" placeholder="Пошук нотаток">
@@ -26,5 +26,16 @@
   <div id="message-container"></div>
   <a href="/logout">Вийти</a>
   <script src="scripts.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+      const textarea = document.getElementById('content');
+      
+      textarea.addEventListener('input', () => {
+        textarea.style.height = 'auto'; // Скидає висоту перед вимірюванням
+        textarea.style.height = (textarea.scrollHeight) + 'px'; // Встановлює нову висоту
+      });
+    });
+  </script>
+  
 </body>
 </html>

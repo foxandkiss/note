@@ -1,0 +1,71 @@
+/* styles.css */
+body {
+    background-color: #F0F0F0;
+    color: #181818;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    width: 100%;
+    padding: 15px;
+    background-color: #8cbf92;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #7aa37e;
+  }
+  
+  a {
+    margin-top: 10px;
+    color: #8cbf92;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Адаптивність для мобільних пристроїв */
+  @media (max-width: 600px) {
+    form {
+      padding: 10px;
+    }
+  
+    input[type="text"], input[type="password"], button {
+      padding: 10px;
+    }
+  }
+  
